@@ -24,7 +24,7 @@ export function Body(func: JSX.Element) {
 
 export default async function Header() {
   
-  const data: string[] = JSON.parse(await fs.readFile(process.cwd() + '/src/app/status-list.json', 'utf8'))
+  const data: string[] = JSON.parse(await fs.readFile(process.cwd() + '/public/status_list.json', 'utf8'))
   const profile_info: ProfileInfo = JSON.parse(await fs.readFile(process.cwd() + '/public/profile_info.json', 'utf-8'))
   
   return (

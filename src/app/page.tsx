@@ -1,22 +1,15 @@
+import { promises as fs } from 'fs';
+
 /*
 #######################
 # USER INFO FUNCTIONS #
 #######################
 */
 
-export default function UserInfo() {
-  const twitch_details: SocialButtonProps = {img_path: "/Twitch_Logo.png", social_name: "AnAngryRaven", social_url: "https://twitch.tv/AnAngryRaven", extra_info: "Joined: 30 Aug 2016"}
-  const spotify_details = {img_path: "/Spotify_Logo.png", social_name: "cyandaquilava", social_url: "https://open.spotify.com/user/cyandaquilava", extra_info: ""}
-  const tumblr_details = {img_path: "/Tumblr_Logo.png", social_name: "AnAngryRaven", social_url: "https://tumblr.com/anangryraven"}
-  const github_details = {img_path: "/Github_Logo.png", social_name: "AnAngryRaven", social_url: "https://github.com/AnAngryRaven"}
+export default async function UserInfo() {
 
-
-  const left_column_socials: SocialButtonProps[] = [
-    twitch_details, spotify_details
-  ];
-  const right_column_socials: SocialButtonProps[] = [
-    github_details, tumblr_details
-  ];
+  const social_buttons: SocialButton[] = JSON.parse(await fs.readFile(process.cwd() + '/public/social_buttons.json', 'utf-8'))
+  
   return (
     <div className="body-content padding-bottom">
       <div className="padding-bottom padding-top">
@@ -30,11 +23,17 @@ export default function UserInfo() {
       <div className="separator padding-bottom"></div>
       <b>SOCIALS</b>
       <div className="social-button-list centre-flexbox">
-        <SocialColumn soc_props={left_column_socials} />
-        <SocialColumn soc_props={right_column_socials} />
+        {Socialbuttons(social_buttons)}
       </div>
     </div>
   );
+}
+
+interface SocialButton {
+  img_path: string,
+  social_name: string,
+  social_url: string,
+  extra_info?: string
 }
 
 /*
@@ -42,6 +41,25 @@ export default function UserInfo() {
 # SOCIAL BUTTON FUNCTIONS #
 ###########################
 */
+
+function Socialbuttons(buttons: SocialButton[]) {
+  const left_socials: SocialButton[] = [];
+  const right_socials: SocialButton[] = [];
+  
+  buttons.forEach((but, ind) => {
+    if(ind % 2 == 0)
+      left_socials.push(but);
+    else
+      right_socials.push(but);
+  })
+
+  return (
+    <>
+      <SocialColumn soc_props={left_socials} />
+      <SocialColumn soc_props={right_socials} />
+    </>
+  )
+}
 
 function SocialColumn({soc_props}: {soc_props: SocialButtonProps[]}) {
   return(

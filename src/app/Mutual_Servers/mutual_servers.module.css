@@ -1,0 +1,38 @@
+.box_height {
+    height: 400px;
+    overflow-y: auto;
+    margin: 5px 5px 5px 0px;
+}
+
+.category_entry {
+    cursor: pointer;
+    padding: 15px 0px 10px 0px;
+}
+
+.category_entry:hover {
+    background-color: #393a3b;
+    border-radius: 5px;
+}
+
+.server_entry {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    margin: 0px 20px 3px 0px;
+    cursor: pointer;
+}
+
+.server_entry:hover {
+    background-color: #393a3b;
+    border-radius: 5px;
+}
+
+.entry_img {
+    width: 50px;
+    border-radius: 20%;
+    margin: 5px 5px 5px 5px;
+}
+
+.entry_text {
+    padding-left: 3%;
+}

@@ -1,1 +1,153 @@
-{}
+[
+    {
+        "category": "",
+        "entries": [
+            {
+                "img_path": "/PFP.jpg",
+                "name": "Anger, Rage Even",
+                "link": "https://raven.guhcat.com"
+            }
+        ]
+    },
+    {
+        "category": "Twitch Streamers",
+        "entries": [
+            {
+                "img_path": "/vicious_snag.png",
+                "name": "Sneegsnag",
+                "link": "https://twitch.tv/sneegsnag"
+            },
+            {
+                "img_path": "/Aimsey.png",
+                "name": "Aimsey",
+                "link": "https://twitch.tv/aimsey"
+            },
+            {
+                "img_path": "/crumb.jpg",
+                "name": "Crumb / Cuptoast",
+                "link": "https://twitch.tv/cuptoast"
+            },
+            {
+                "img_path": "/Pili.png",
+                "name": "Dtowngato",
+                "link": "https://twitch.tv/dtowngato"
+            },
+            {
+                "img_path": "/ran_ran_thank_you_maam.jpg",
+                "name": "Ranboo",
+                "link": "https://twitch.tv/ranboolive"
+            }
+        ]
+    },
+    {
+        "category": "Musicians",
+        "open": true,
+        "entries": [
+            {
+                "img_path": "/bo_burnham.jpg",
+                "name": "Bo Burnham",
+                "link": "https://twitch.tv/sneegsnag"
+            },
+            {
+                "img_path": "/calypso.jpg",
+                "name": "Calypso",
+                "link": "https://twitch.tv/sneegsnag"
+            },
+            {
+                "img_path": "/coldplay.jpg",
+                "name": "Coldplay",
+                "link": "https://twitch.tv/sneegsnag"
+            },
+            {
+                "img_path": "/djo.jpg",
+                "name": "Djo",
+                "link": "https://twitch.tv/sneegsnag"
+            },
+            {
+                "img_path": "/goodkidband.jpg",
+                "name": "Good Kid",
+                "link": "https://twitch.tv/sneegsnag"
+            },
+            {
+                "img_path": "/idkhow.jpg",
+                "name": "I DONT KNOW HOW BUT THEY FOUND ME",
+                "link": "https://twitch.tv/sneegsnag"
+            },
+            {
+                "img_path": "/jimbo.jpg",
+                "name": "James Mariott",
+                "link": "https://twitch.tv/sneegsnag"
+            },
+            {
+                "img_path": "/laufey.jpg",
+                "name": "Laufey",
+                "link": "https://twitch.tv/sneegsnag"
+            },
+            {
+                "img_path": "/lemon_man.jpg",
+                "name": "Lemon Demon",
+                "link": ""
+            },
+            {
+                "img_path": "/lorde.jpg",
+                "name": "Lorde",
+                "link": ""
+            },
+            {
+                "img_path": "/metallica.jpg",
+                "name": "Metallica",
+                "link": ""
+            },
+            {
+                "img_path": "/mothica.jpg",
+                "name": "Mothica",
+                "link": ""
+            },
+            {
+                "img_path": "/patd.jpg",
+                "name": "Panic! At the Disco",
+                "link": ""
+            },
+            {
+                "img_path": "/scissor_sisters.jpg",
+                "name": "Scissor Sisters",
+                "link": ""
+            },
+            {
+                "img_path": "/shayfer_james.jpg",
+                "name": "Shayfer James",
+                "link": ""
+            },
+            {
+                "img_path": "/stromae.jpg",
+                "name": "Stromae",
+                "link": ""
+            },
+            {
+                "img_path": "/soad.jpg",
+                "name": "System of a Down",
+                "link": ""
+            },
+            {
+                "img_path": "/Good_Kid.jpg",
+                "name": "The Crane Wives",
+                "link": ""
+            },
+            {
+                "img_path": "/tobe.jpg",
+                "name": "Toby Fox",
+                "link": ""
+            },
+            {
+                "img_path": "/top.jpg",
+                "name": "Twenty One Pilots",
+                "link": ""
+            },
+            {
+                "img_path": "/wallows.png",
+                "name": "Wallows",
+                "link": ""
+            }
+        ]
+    }
+]

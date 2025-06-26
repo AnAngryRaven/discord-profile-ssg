@@ -169,6 +169,10 @@ a {
   width: 190px;
 }
 
+.social-details {
+  text-align: center;
+}
+
 .clickable-social {
   width: 22px;
   height: 22px;

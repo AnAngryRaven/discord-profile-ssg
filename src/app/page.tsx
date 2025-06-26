@@ -19,6 +19,8 @@ export default async function UserInfo() {
         <p className="no-padding">social anxiety haver</p>
         <br/>
         <p className="no-padding">lorde / good kid enjoyer</p>
+        <br/>
+        <p className='no-padding'>(this is a template btw! feel free to use it <a className='a-underline' href="https://github.com/AnAngryRaven/discord-profile-ssg">here!</a> :D)</p>
       </div>
       <div className="separator padding-bottom"></div>
       <b>SOCIALS</b>
@@ -84,7 +86,7 @@ function SocialButton({props}: {props: SocialButtonProps}) {
       <a href={props.social_url} className="social-name" target="_blank">
         <CustomImage img_path={props.img_path} class_names="social-icon" />
 
-        <div>
+        <div className='social-details'>
           <b>{props.social_name}</b>
           <CustomText text={props.extra_info ? props.extra_info : ""} class_names="social-extra-info" />
         </div>

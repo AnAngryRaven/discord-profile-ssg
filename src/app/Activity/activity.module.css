@@ -1,0 +1,18 @@
+.card_details {
+    
+}
+
+.card_img {
+    width: 96px;
+}
+
+.card_indent {
+    padding-left: 3%;
+}
+
+.card_layout {
+    display: flex;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    align-items: center;
+}

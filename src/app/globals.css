@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background-color: #36393F;
+  --font-family: 'Segoe UI', arial;
+  --color: #B9BBBE
+}
+
+div {
+  background-color: #18191C;
+  padding: 0px 0px px 0px;
+  margin: 0px 0px 0px 0px;
+  font-family: var(--font-family);
+  color: var(--color);
+}
+p {
+  padding: 0px 1.5% 0px 1.5%;
+  margin: 0px 0px 0px 0px;
+  color: var(--color);
+  font-family: var(--font-family);
+}
+img {
+  margin: 0px 0px 0px 0px;
+  pointer-events: none;
+}
+a {
+  font-family: var(--font-family);
+  color: #7A97C2;
+}
+
+.a-underline {
+  text-decoration: underline;
+}
+
+.user-info {
+  width: 600px;
+}
+
+.centre-flexbox {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.left-flexbox {
+  display: flex;
+  background-color: transparent;
+}
+
+.link-elm {
+  font-family: var(--font-family);
+  color: var(--color);
+}
+
+.flexbox {
+  display: flex;
+}
+
+.big-bold {
+  font-size: 1.325rem;
+  color: white;
+}
+
+.header-content {
+  padding-left: 20px;
+}
+
+.body-content {
+  padding-left: 5%;
+}
+
+.pronouns-spacing {
+  padding-right: 22px;
+}
+
+.separator {
+  border-top: 1px solid #4f4f4f;
+	width: 100%;
+}
+
+.buttons-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.no-padding {
+  padding: 0px 0px 0px 0px;
+}
+
+.padding-bottom {
+  padding-bottom: 3%;
+}
+
+.padding-top {
+  padding-top: 3%;
+}
+
+#banner-image {
+  width: 600px;
+  height: 122px;
+  object-fit: cover;
+}
+
+#wrapper-style {
+  margin-bottom: 70px;
+}
+
+#pfp {
+  clip-path: circle(50% at center);
+  width: 128px;
+  height: 128px;
+  position: relative;
+  margin: 6px 0px 0px 6px;
+}
+
+#pfp-border {
+  clip-path: circle(50% at center);
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  margin-left: 20px;
+  transform: translate(0%, -50%);
+}
+
+.status-emote {
+  width: 24px;
+  height: 24px;
+}
+
+/*
+#########################
+# SOCIAL BUTTON CLASSES #
+#########################
+*/
+
+.social-button-list {
+  flex-direction: row;
+}
+
+.social-button-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-button {
+  width: 264px;
+  border: 1px solid #4f4f4f;
+  border-radius: 3px;
+  margin: 15px 15px 0px 0px;
+}
+
+.social-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 5px 5px 5px 5px;
+}
+
+.social-icon {
+  height: 28px;
+}
+
+.social-extra-info {
+  font-size: 0.8rem;
+  width: 190px;
+}
+
+.clickable-social {
+  width: 22px;
+  height: 22px;
+}

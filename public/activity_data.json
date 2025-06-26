@@ -1,0 +1,17 @@
+{
+    "game_data": {
+        "activity": {
+            "img_path": "/Game.jpg",
+            "activity_title": "Sky: Children of the Light"
+        },
+        "duration": "3 hours"
+    },
+    "listening_data": {
+        "activity": {
+            "img_path": "/Album_Art.jpeg",
+            "activity_title": "A DARK ZONE"
+        },
+        "artist": "Toby Fox",
+        "album": "DELTARUNE Chapters 3+4 (Original Game Soundtrack)"
+    }
+}

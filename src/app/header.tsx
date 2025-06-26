@@ -4,9 +4,9 @@ import { promises as fs } from 'fs';
 import Link from 'next/link';
 
 interface ProfileInfoProps {
-  display_name: string,
+  display_name?: string,
   username: string,
-  pronouns: string,
+  pronouns?: string,
   emote_path?: string,
   status_text?: string[]
 }
@@ -25,12 +25,13 @@ export function Body(func: JSX.Element) {
 export default async function Header() {
   
   const data: string[] = JSON.parse(await fs.readFile(process.cwd() + '/src/app/status-list.json', 'utf8'))
+  const profile_info: ProfileInfo = JSON.parse(await fs.readFile(process.cwd() + '/public/profile_info.json', 'utf-8'))
   
   return (
     <div>
-      <BannerImage path="/Banner_Image.jpg"/>
-      <ProfilePicture />
-      <ProfileInfo display_name="AnAngryRaven" username="anangryraven" pronouns="any/all" emote_path="/amongAss.gif" status_text={data}/>
+      <BannerImage path={profile_info.banner_img_path}/>
+      <ProfilePicture pfp_path={profile_info.pfp_img_path} />
+      <ProfileInfo display_name={profile_info.display_name} username={profile_info.username} pronouns={profile_info.pronouns} emote_path={profile_info.emote_img_path} status_text={data}/>
       <HeaderButtons />
       <div className="separator"></div>
     </div>
@@ -38,7 +39,7 @@ export default async function Header() {
 }
 
 function BannerImage({path}: {path?: string}) {
-  return ( <img id="banner-image" src={path ? path : "https://guhcat.com/guh-cat.gif"}/>);
+  return ( <img id="banner-image" src={path ? path : "/Banner_Image.jpg"}/>);
 }
 
 function ProfilePicture({pfp_path}: {pfp_path?: string}){
@@ -55,7 +56,7 @@ function ProfileInfo(props: ProfileInfoProps){
   
   return (
     <div>
-      <b className="header-content big-bold">{props.display_name ? props.display_name : 'Display Name'}</b>
+      <b className="header-content big-bold">{props.display_name ? props.display_name : props.username }</b>
       <br/>
       <div className="flexbox">
         <b className="header-content pronouns-spacing">{props.username ? props.username : 'username'}</b>
@@ -79,4 +80,13 @@ function HeaderButtons() {
       <Link className="link-elm" href="Mutual_Friends" replace>Mutual Friends</Link>
     </div>
   );
+}
+
+interface ProfileInfo {
+  display_name?: string,
+  username: string,
+  pronouns?: string,
+  pfp_img_path: string,
+  banner_img_path?: string,
+  emote_img_path?: string
 }

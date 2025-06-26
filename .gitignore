@@ -46,3 +46,6 @@ next-env.d.ts
 *.png
 *.gif
 *.svg
+
+#image assets that i've made myself
+!public/link-arrow.png

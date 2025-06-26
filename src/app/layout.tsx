@@ -3,7 +3,7 @@ import "./globals.css";
 import Header from './header.tsx';
 
 export const metadata: Metadata = {
-  title: "Sussus Amogus",
+  title: "AnAngryRaven",
 };
 
 export default function RootLayout({

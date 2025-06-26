@@ -28,9 +28,9 @@ export default async function Header() {
   
   return (
     <div>
-      <BannerImage path="https://sussus.guhcat.com/cats.jpg"/>
+      <BannerImage path="/Banner_Image.jpg"/>
       <ProfilePicture />
-      <ProfileInfo display_name="Sussus Amogus" username="sussusamogus47" pronouns="any/all" emote_path="/amongAss.gif" status_text={data}/>
+      <ProfileInfo display_name="AnAngryRaven" username="anangryraven" pronouns="any/all" emote_path="/amongAss.gif" status_text={data}/>
       <HeaderButtons />
       <div className="separator"></div>
     </div>

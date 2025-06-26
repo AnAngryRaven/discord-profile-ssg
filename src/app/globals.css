@@ -47,6 +47,7 @@ a {
 .left-flexbox {
   display: flex;
   background-color: transparent;
+  align-items: center;
 }
 
 .link-elm {

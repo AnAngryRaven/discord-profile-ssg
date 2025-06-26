@@ -1,6 +1,8 @@
 # Discord Profile SSG
 A simple static site generator (SSG) that allows you to easily create an informative card based on the look of a Discord profile!
 
+For a demo of what the template looks like, visit [here!](https://raven.guhcat.com/card/)
+
 ## Usage {WIP}
 
 Information is taken from an assortment of JSON files and image files from the `/public` directory.

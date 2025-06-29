@@ -10,8 +10,9 @@
 }
 
 .category_entry_img {
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    padding: 15px 0px 10px 0px;
     list-style: none;
 }
 
@@ -29,11 +30,24 @@
     display: flex;
     align-items: center;
     border-radius: 15px;
+    margin: 0px 20px 3px 5px;
+    cursor: pointer;
+}
+
+.server_entry_nocat {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
     margin: 0px 20px 3px 0px;
     cursor: pointer;
 }
 
 .server_entry:hover {
+    background-color: #393a3b;
+    border-radius: 5px;
+}
+
+.server_entry_nocat:hover {
     background-color: #393a3b;
     border-radius: 5px;
 }

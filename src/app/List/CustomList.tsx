@@ -2,15 +2,17 @@ import Link from 'next/link';
 import styles from '../List/CustomList.module.css';
 
 export default function Category(data: ServerEntry) {
-    const category_entries = data.entries.map(entry => ServerEntry(entry))
+    
     
     if(data.category == "" || data.category == "none".toLowerCase()) {
+        const category_entries = data.entries.map(entry => ServerEntry(entry, false))
         return (
             <div key="none-category">{category_entries}</div>
             
         )
     }
     else {
+        const category_entries = data.entries.map(entry => ServerEntry(entry, true))
         return (
             <div key={data.category}>
                 <details open={data.open}>
@@ -26,8 +28,8 @@ function DetermineCategory(data: ServerEntry) {
     if(data.img_path){
         return (
             <summary className={styles.category_entry_img}>
-                <img src={data.img_path}/>
-                {data.category}
+                <img className={styles.entry_img} src={data.img_path}/>
+                <p>{data.category}</p>
             </summary>
         )
     }else {
@@ -37,9 +39,9 @@ function DetermineCategory(data: ServerEntry) {
     }
 }
 
-function ServerEntry(data: ServerDetails) {
+function ServerEntry(data: ServerDetails, cat: boolean) {
     return(
-        <Link className={styles.server_entry} key={data.name} href={data.link} >
+        <Link className={cat ? styles.server_entry : styles.server_entry_nocat} key={data.name} href={data.link} >
             <img className={styles.entry_img} src={data.img_path}/>
             <p>{data.name}</p>
         </Link>

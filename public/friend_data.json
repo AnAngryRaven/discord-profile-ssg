@@ -1,0 +1,13 @@
+[
+    {
+        "category": "Smallnoot",
+        "img_path": "/noot.jpg",
+        "entries": [
+            {
+                "img_path": "/Bluesky_Logo.png",
+                "name": "Bluesky",
+                "link": "https://bsky.app/profile/smallnoot.guhcat.com"
+            }
+        ]
+    }
+]
